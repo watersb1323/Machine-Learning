@@ -16,7 +16,7 @@ def p_spam_given_word(word_prob):
     return prob_if_spam / (prob_if_spam + prob_if_not_spam)
 
 # modify the path with wherever you've put the files
-path = r"C:\Users\beano\Documents\GitHub\Machine Learning\Naive Bayes\Test_data\*\*"
+path = r"C:\Users\beano\Documents\GitHub\Machine-Learning\Naive Bayes\Test_data\*\*"
 data = []
 # glob.glob returns every filename that matches the wildcarded path
 for fn in glob.glob(path):
