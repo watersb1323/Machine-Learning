@@ -20,11 +20,18 @@ def make_Dictionary(train_dir):
                     words = line.split()
                     all_words += words
 
-    dictionary = Counter(all_words)
-    # Paste code for non-word removal here(code snippet is given below)
+    dictionary = Counter(x for x in all_words if x.isalpha() and len(x) != 1)
+    dictionary = dictionary.most_common(3000)
     return dictionary
 
-if __name__ == "__main__":
-    train_dir = ""
+def print_dict(dict_to_print):
+    '''Print all elements of a dictionary'''
+    for k,v in dict_to_print.items():
+        print("%s - %s" % (str(k), str(v)))
 
-    make_Dictionary(train_dir)
+if __name__ == "__main__":
+    train_dir = r"C:\Users\brwaters\Documents\GitHub\Machine-Learning\Naive Bayes\Online tutorial\train-mails"
+
+    my_dict = make_Dictionary(train_dir)
+
+    print(my_dict)
