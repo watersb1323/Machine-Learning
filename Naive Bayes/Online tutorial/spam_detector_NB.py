@@ -24,3 +24,7 @@ def make_Dictionary(train_dir):
     # Paste code for non-word removal here(code snippet is given below)
     return dictionary
 
+if __name__ == "__main__":
+    train_dir = ""
+
+    make_Dictionary(train_dir)
