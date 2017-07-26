@@ -55,6 +55,6 @@ if __name__ == "__main__":
 
     my_dict = make_Dictionary(train_dir)
 
-    # train_matrix = extract_features(train_dir, my_dict)
+    train_matrix = extract_features(train_dir, my_dict)
 
     print(my_dict)
