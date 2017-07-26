@@ -92,7 +92,7 @@ def main():
     # Test tokenize function
     words = tokenize('This was the first test string that was used and will probably be the last... Or maybe not the last')
     print(words)
-    
+
     training_set = [('Hey now, less of it', 1),
                     ('Hardly now, I did not think that anyway', 1),
                     ('Maybe it is', 0),
